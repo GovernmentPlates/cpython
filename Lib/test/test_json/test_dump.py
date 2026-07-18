@@ -130,7 +130,6 @@ class TestDump:
         self.assertEqual(self.dumps({'key': obj}),
                          '{"key": "nonascii:\\u00e9"}')
 
-
 class TestPyDump(TestDump, PyTest): pass
 
 class TestCDump(TestDump, CTest):
